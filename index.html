@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Passport Photo Maker</title>
+<style>
+body{font-family:Arial;text-align:center;padding:30px;background:#f0f0f0}
+.box{background:white;padding:20px;border-radius:10px;max-width:400px;margin:auto;box-shadow:0 0 10px gray}
+button{background:blue;color:white;padding:10px 20px;border:none;border-radius:5px;cursor:pointer;margin-top:10px}
+</style>
+</head>
+<body>
+<div class="box">
+<h2>Passport Photo Background Remover</h2>
+<form action="/remove_bg" method="post" enctype="multipart/form-data">
+<p>Photo Select Karo:</p>
+<input type="file" name="photo" required><br><br>
+<p>Background Color:</p>
+<select name="color">
+<option value="white">White</option>
+<option value="blue">Blue</option>
+<option value="gray">Gray</option>
+</select><br><br>
+<button type="submit">Download Photo</button>
+</form>
+</div>
+</body>
+</html>
